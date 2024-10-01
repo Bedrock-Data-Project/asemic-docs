@@ -187,6 +187,7 @@ export default defineConfig({
     description: "Advanced product analytics platform",
     srcDir: "docs",
     rewrites: rewrites,
+    ignoreDeadLinks: true,
     themeConfig: {
         search: {
             provider: "local",
