@@ -94,7 +94,6 @@ const { rewrites, sidebar } = generateConfig();
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    base: "/asemic-docs/",
     title: "Asemic",
     description: "Advanced product analytics platform",
     srcDir: "docs",
