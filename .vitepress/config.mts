@@ -2,95 +2,6 @@ import { defineConfig } from "vitepress";
 import fs from "fs";
 import path from "path";
 
-// const rewrites = {
-//     "1.get-started/1.introduction.md": "get-started/introduction.md",
-//     "1.get-started/2.key-concepts.md": "get-started/key-concepts.md",
-//     "1.get-started/3.get-started.md": "get-started/get-started.md",
-//     "2.capabilities/1.dashboard-creation.md":
-//         "capabilities/dashboard-creation.md",
-//     "2.capabilities/2.chart-types.md": "capabilities/chart-types.md",
-//     "2.capabilities/3.date-filter.md": "capabilities/date-filter.md",
-//     "2.capabilities/4.time-travel.md": "capabilities/time-travel.md",
-//     "2.capabilities/5.user-action-as-filter.md":
-//         "capabilities/user-action-as-filter.md",
-//     "2.capabilities/6.annotations.md": "capabilities/annotations.md",
-//     "2.capabilities/7.auto-generation.md": "capabilities/auto-generation.md",
-
-//     "4.advanced-topics/1.connecting-data-sources.md":
-//         "advanced-topics/connecting-data-sources.md",
-//     "4.advanced-topics/3.setting-up-semantic-layer.md":
-//         "advanced-topics/setting-up-semantic-layer.md",
-// };
-
-// const sidebar = [
-//     {
-//         text: "Get Started",
-//         collapsed: false,
-//         items: [
-//             {
-//                 text: "Introduction",
-//                 link: "/get-started/introduction",
-//             },
-//             {
-//                 text: "Key Concepts",
-//                 link: "/get-started/key-concepts",
-//             },
-//             {
-//                 text: "Get Started",
-//                 link: "/get-started/get-started",
-//             },
-//         ],
-//     },
-//     {
-//         text: "Capabilities",
-//         collapsed: false,
-//         items: [
-//             {
-//                 text: "Dashboard Creation",
-//                 link: "/capabilities/dashboard-creation",
-//             },
-//             {
-//                 text: "Chat Types",
-//                 link: "/capabilities/chart-types",
-//             },
-//             {
-//                 text: "Date Filter",
-//                 link: "/capabilities/date-filter",
-//             },
-//             {
-//                 text: "Time Travel",
-//                 link: "/capabilities/time-travel",
-//             },
-//             {
-//                 text: "User Action as Filter",
-//                 link: "/capabilities/user-action-as-filter",
-//             },
-//             {
-//                 text: "Annotations",
-//                 link: "/capabilities/annotations",
-//             },
-//             {
-//                 text: "Auto Generation",
-//                 link: "/capabilities/auto-generation",
-//             },
-//         ],
-//     },
-//     {
-//         text: "Advanced Topics",
-//         collapsed: false,
-//         items: [
-//             {
-//                 text: "Connecting Data Sources",
-//                 link: "/advanced-topics/connecting-data-sources",
-//             },
-//             {
-//                 text: "Setting Up Semantic Layer",
-//                 link: "/advanced-topics/setting-up-semantic-layer",
-//             },
-//         ],
-//     },
-// ];
-
 interface SidebarItem {
     text: string;
     link: string;
@@ -183,6 +94,7 @@ const { rewrites, sidebar } = generateConfig();
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: "/asemic-docs/",
     title: "Asemic",
     description: "Advanced product analytics platform",
     srcDir: "docs",
