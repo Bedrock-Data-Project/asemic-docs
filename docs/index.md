@@ -4,8 +4,8 @@ layout: home
 
 hero:
     name: "Asemic"
-    text: "Advanced product analytics platform"
-    tagline: My great project tagline
+    text: "DWH-native product analytics platform"
+    tagline: Ulock your data
     image:
         src: /img/hero.png
         alt: Asemic
@@ -18,12 +18,19 @@ hero:
           link: http://35.244.200.118/
 
 features:
-    - title: Semantic Layer
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - title: Key Concepts
+      details: Learn about the foundations of Asemic
+      link: /get-started/key-concepts.md
+
     - title: Data Integration
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - title: Analytics Features
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - title: Visualization
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      details: Set up integration
+      link: /advanced-topics/connecting-data-sources
+
+    - title: Dashboards
+      details: KPI as a first-class citizen
+      link: /capabilities/
+
+    - title: Time Travel
+      details: Segment by any past state of a user
+      link: /capabilities/time-travel.md
 ---
