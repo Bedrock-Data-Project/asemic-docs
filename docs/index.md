@@ -13,9 +13,9 @@ hero:
         - theme: brand
           text: Get Started
           link: /get-started/introduction
-        - theme: alt
-          text: Launch App
-          link: http://35.244.200.118/
+        # - theme: alt
+        #   text: Launch App
+        #   link: http://35.244.200.118/
 
 features:
     - title: Key Concepts
