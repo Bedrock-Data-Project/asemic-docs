@@ -16,7 +16,9 @@ const umamiScript: HeadConfig = [
     },
 ];
 
-const baseHeaders: HeadConfig[] = [];
+const baseHeaders: HeadConfig[] = [
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+];
 
 const headers =
     process.env.ENVIRONMENT === "production"

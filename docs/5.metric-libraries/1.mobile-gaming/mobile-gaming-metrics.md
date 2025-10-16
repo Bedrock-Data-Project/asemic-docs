@@ -273,7 +273,7 @@ kpis:
       cohort_day: {}
 
   average_purchase_value:
-    label: "Averaage Purchase Value"
+    label: "Average Purchase Value"
     select: "SAFE_DIVIDE(SUM({property.revenue_per_day}), SUM({property.purchase_count_per_day}))"
     unit: {symbol: '$', is_prefix: true}
     x_axis:
