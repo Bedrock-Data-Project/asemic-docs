@@ -1,5 +1,6 @@
 import { defineConfig, HeadConfig } from "vitepress";
 import { generateConfig } from "./rewrites";
+import { transformHead } from "./head";
 import dotenv from "dotenv";
 
 // Load environment variables from .env file
@@ -26,12 +27,16 @@ const headers =
         : baseHeaders;
 
 export default defineConfig({
-    title: "Asemic",
+    title: "Asemic Documentation - DWH-Native Product Analytics Platform",
     head: headers,
-    description: "Advanced product analytics platform",
+    description: "Complete documentation for Asemic product analytics. Learn about dashboards, time travel, data integration, semantic layers, and key concepts for DWH-native analytics.",
     srcDir: "docs",
+    transformHead: ({ pageData }) => transformHead(pageData),
     rewrites: config.rewrites,
     ignoreDeadLinks: true,
+    sitemap: {
+        hostname: "https://docs.asemicanalytics.com",
+    },
     themeConfig: {
         search: {
             provider: "local",
